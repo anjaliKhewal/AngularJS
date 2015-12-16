@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="communicationController">
+<head>
+<title> Communication between controllers </title>
+
+<link rel="stylesheet" href="framework/bootstrap-3.3.5-dist/css/bootstrap.css"/>
+<script lang="javascript" src="framework/angular/angular.js"></script>
+<script lang="javascript" src="framework/jquery/jquery-2.1.4.js"></script>
+<script lang="javascript" src="framework/bootstrap-3.3.5-dist/js/bootstrap.js"></script>
+
+<script lang="javascript" src="js/Demo2.js"></script>
+
+</head>
+<body>
+<div class="container">
+<h1>Hello Controllers</h1>
+
+	<div ng-controller="ProductController">
+		<div class="panel-heading">
+		</div>
+			<div class="panel-body">
+			
+			<div class="form-group">
+			<label> Message Received: {{m1.text}}</label>
+			</div>
+			
+				<div>
+				<label> Message Received: {{m1.text}}</label>
+				<input type="text" class="form-control" ng-model="m1.text" id="message1" placeholder="Enter Message">
+				<button type="submit" ng-click="btnClick(m1.text)" class="btn btn-default">Send Message</button>
+				</div>
+			</div>
+		</div>
+</div>
+
+</body>
+</html>
