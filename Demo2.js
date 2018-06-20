@@ -9,6 +9,7 @@ function productController($scope,msgService){
 		}
 		//$scope.m1={};
 		$scope.m1=msgService.getMessage();
+	alert("hello world");
 }
 
 function messageService(){
